@@ -1,72 +1,25 @@
-const cursor = document.querySelector(".cursor");
+window.addEventListener("load",()=>{
 
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-
-document.querySelectorAll(".buttons a").forEach(button => {
-
-    button.addEventListener("mouseenter", () => {
-        button.style.transform = "translateY(-8px) scale(1.05)";
-    });
-
-    button.addEventListener("mouseleave", () => {
-        button.style.transform = "";
-    });
+document.body.classList.add("loaded");
 
 });
 
-window.addEventListener("load", () => {
+const buttons=document.querySelectorAll(".buttons a");
 
-    document.body.animate(
+buttons.forEach(button=>{
 
-        [
-            {
-                opacity:0
-            },
-            {
-                opacity:1
-            }
-        ],
+button.addEventListener("mousemove",(e)=>{
 
-        {
-            duration:900,
-            easing:"ease"
-        }
+const rect=button.getBoundingClientRect();
 
-    );
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+button.style.setProperty("--x",x+"px");
+
+button.style.setProperty("--y",y+"px");
 
 });
 
-const logo = document.querySelector(".logoIcon");
-
-setInterval(() => {
-
-    logo.animate(
-
-        [
-
-            {
-                transform:"scale(1)"
-            },
-
-            {
-                transform:"scale(1.08)"
-            },
-
-            {
-                transform:"scale(1)"
-            }
-
-        ],
-
-        {
-
-            duration:2500
-
-        }
-
-    );
-
-},2500);
+});
