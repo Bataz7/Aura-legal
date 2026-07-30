@@ -294,3 +294,37 @@ to{
 transform:rotate(360deg);
 }
 }
+#particles{
+position:absolute;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+}
+
+.particle{
+position:absolute;
+width:3px;
+height:3px;
+border-radius:50%;
+background:#8be9ff;
+opacity:.5;
+animation:particle linear infinite;
+}
+
+@keyframes particle{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:.7;
+}
+
+100%{
+transform:translateY(-180px);
+opacity:0;
+}
+
+}
