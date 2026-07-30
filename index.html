@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aura • Legal Center</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Aura • Legal Center</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="background">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+
+    <div class="aurora aurora1"></div>
+    <div class="aurora aurora2"></div>
+    <div class="aurora aurora3"></div>
+
+    <div class="grid"></div>
+
+    <div id="particles"></div>
+
 </div>
 
-<nav class="navbar">
+<div class="cursor-glow"></div>
+
+<header>
 
     <div class="logo">
 
-        <div class="logoIcon">A</div>
+        <div class="logo-circle">
 
-        <h2>Aura</h2>
+            <div class="ring"></div>
+
+            <span>A</span>
+
+        </div>
+
+        <div>
+
+            <h2>Aura</h2>
+            <p>Discord Bot</p>
+
+        </div>
 
     </div>
 
-</nav>
+</header>
+
+<main>
 
 <section class="hero">
 
-    <div class="glass">
+<div class="glass-card">
 
-        <div class="tag">
-            OFFICIAL LEGAL CENTER
-        </div>
+<span class="badge">
 
-        <h1>
-            Aura
-        </h1>
+Official Legal Center
 
-        <p>
+</span>
 
-            Welcome to Aura's official legal center.
+<h1>
 
-            Here you can access our Privacy Policy
-            and Terms of Service.
+Aura
 
-        </p>
+</h1>
 
-        <div class="buttons">
+<p>
 
-            <a href="privacy.html" class="primary">
+Welcome to Aura's official legal center.
 
-                <i class="fa-solid fa-shield-halved"></i>
+Access our Privacy Policy and Terms of Service below.
 
-                Privacy Policy
+</p>
 
-            </a>
+<div class="buttons">
 
-            <a href="terms.html" class="secondary">
+<a href="privacy.html" class="primary">
 
-                <i class="fa-solid fa-file-contract"></i>
+Privacy Policy
 
-                Terms of Service
+</a>
 
-            </a>
+<a href="terms.html" class="secondary">
 
-        </div>
+Terms of Service
 
-    </div>
+</a>
+
+</div>
+
+<div class="features">
+
+<div>
+
+🛡️ Secure
+
+</div>
+
+<div>
+
+🔒 Privacy First
+
+</div>
+
+<div>
+
+✅ Discord Ready
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+</main>
+
 <footer>
 
-    <div>
-
-        © 2026 Aura
-
-    </div>
-
-    <div>
-
-        Discord Management Platform
-
-    </div>
+© 2026 Aura
 
 </footer>
 
-<div class="cursor"></div>
-
-<script src="script.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
