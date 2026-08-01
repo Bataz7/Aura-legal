@@ -822,3 +822,8 @@ border-radius:20px;
 background:#7EE7FF;
 
 }
+.logo-img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+}
