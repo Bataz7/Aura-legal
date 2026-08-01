@@ -58,17 +58,26 @@ color:inherit;
 .background{
 
 position:fixed;
-
 inset:0;
 
 z-index:-5;
 
 background:
 linear-gradient(
-rgba(5,10,20,.65),
-rgba(5,10,20,.85)
+rgba(6,9,19,.45),
+rgba(6,9,19,.78)
 ),
-url("../assets/background.jpg");
+url("../assets/background.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+}
 
 background-size:cover;
 
